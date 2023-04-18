@@ -1,0 +1,309 @@
+<html>
+    <head>
+        <title> my new website</title>
+        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+        <style>
+            body{
+                scroll-behavior: smooth;
+                overflow-x: hidden;
+            }
+            header{
+                width: 100%;
+                height: 90vh;
+                background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+                            url(../public/images/img5.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            nav{
+                width: 100%;
+                height: 80px;
+                background: white;
+                color: black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 60px;
+                position: fixed;
+                top: 0;
+                
+            }
+            .logo{
+                font-family: sans-serif;
+                font-size: 2.5em;
+            }
+            .logo span{
+                color: #e743ce;
+            }
+            .menu a{
+                text-decoration: none;
+                color: black;
+                padding: 10px 20px;
+                font-family: sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .menu{
+                margin-right: 120px;
+            }
+            .menu a:first-child{
+                color: #e743ce;
+            }
+            .menu a:hover{
+                color: #e743ce;
+            }
+            .icon{
+                margin-right: 100px;
+            }
+            .icon a{
+                text-decoration: none;
+                background: red;
+                color: white;
+                padding: 10px 20px;
+                margin-left: 30px;
+                border-radius: 5px;
+
+            }
+            .icon i{
+                font-size: 20px;
+            }
+            .icon:hover{
+                color: #e743ce;
+            }
+            .h-text{
+                color: white;
+                max-width: 700px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+
+            }
+            #camera{
+                font-size: 30px;
+                margin-bottom: 2px;
+
+            }
+            .h-text h1{
+                font-family: sans-serif;
+                font-size: 3em;
+                line-height: 1.5em;
+            }
+            .h-text input{
+                width: 60%;
+                padding: 20px;
+                border: none;
+                outline: none;
+                border-radius: 8px;
+
+            }
+            .h-text button{
+                width: 30%;
+                padding: 20px;
+                background: red;
+                color: white;
+                border: none;
+                outline: none;
+                border-radius: 8px;
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            .filter-gallery{
+                padding: 100px;
+                
+
+            }
+            .portfolio-menu{
+                text-align: center;
+                margin-bottom: 20px;
+                
+
+
+            }
+            .portfolio-menu ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 20px 0px;
+                font-size: 20px;
+                font-family: sans-serif;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: 0.5s ease;
+                text-align: center;
+
+
+            }
+            .portfolio-menu ul li:hover{
+                color: white;
+                background: #e06666;
+                border-radius: 8px;
+
+            }
+            li.active{
+                color: white;
+                background: #e06666;
+                border-radius: 8px;
+
+            }
+            .portfolio-item{
+                width: 100%;
+            }
+            .portfolio-item .item{
+                width: 410px;
+                height: 360px;
+                float: left;
+                margin-bottom: 20px;
+                margin-right: 20px;
+            }
+            .portfolio-item .item img{
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                
+
+            }
+            .member{
+                width: 300px;
+                
+                
+                font-family: sans-serif;
+                text-align: center;
+                margin-left: 580px;
+                padding: 0%;
+                margin-top: 2px;
+
+            }
+           .member-info{
+            text-align: center;
+           }
+           .member-info h1{
+            font-size: 50px;
+           }
+           .member-info h1 span{
+            color: #e06666;
+           }
+           p{
+            font-weight: bold;
+            
+            
+            
+           }
+
+
+
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    photo<span>pi</span>X
+
+                </div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Gallary</a>
+                    <a href="#">content</a>
+
+                </div>
+                <div class="icon">
+                    
+                    <i class="fa fa-search"></i>
+                    <a href="#login">Login </a>
+
+
+                </div>
+            </nav>
+            <section class="h-text">
+                <i class="fa fa-camera" id="camera"></i>
+                <h1>Capturing the moments that captivate your heart..</h1>
+                <input type="text" name="" placeholder="Search here....">
+                <button><i class="fa fa-search"></i></button>
+
+            </section>
+        </header>
+        <section class="filter-gallery">
+            <div class="portfolio-menu">
+                <ul>
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".nature">Nature </li>
+                    <li data-filter=".Fashion">Fashion </li>
+                    <li data-filter=".Weeding">Weeding </li>
+
+                </ul>
+
+            </div>
+            <div class="portfolio-item">
+                <div class="item nature">
+                    <img src="./images/p1.webp" width="50%" height="50%">
+
+                </div>
+                <div class="item Fashion">
+                    <img src="./images/p2.jpg" width="50%" height="50%">
+
+                </div>
+                <div class="item Weeding">
+                    <img src="./images/p3.jpg" width="50%" height="50%">
+
+                </div>
+                <div class="item nature">
+                    <img src="./images/p4.webp" width="50%" height="50%">
+
+                </div>
+                <div class="item Fashion">
+                    <img src="./images/p5.jpg" width="50%" height="50%">
+
+                </div>
+                <div class="item Weeding">
+                    <img src="./images/p6.jpg" width="50%" height="50%">
+
+                </div>
+                <div class="item nature">
+                    <img src="./images/p7.webp" width="50%" height="50%">
+
+                </div>
+                <div class="item Fashion">
+                    <img src="./images/p8.jpg" width="50%" height="50%">
+
+                </div>
+                <div class="item Weeding">
+                    <img src="./images/p9.webp" width="50%" height="50%">
+
+                </div>
+
+            </div>
+        </section>
+        <section class="member">
+            <div class="member-info">
+                <h1>Our <span>Information</span></h1>
+                <p> with our member says</p>
+
+            </div>
+
+        </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $('.portfolio-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+        $('.portfolio-menu ul li').click(function(){
+        $('.portfolio-menu ul li').removeclass('active');
+        $(this).addclass('active');  
+              
+                var selector =$(this).attr('data-filter');
+            $('.portfolio-items').isotope({
+                filter:selector
+            });
+            return false; 
+
+        }); 
+        </script>
+    </body>
+</html>
